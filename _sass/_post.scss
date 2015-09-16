@@ -1,0 +1,65 @@
+.post-image {
+  @include span-columns(12);
+  margin: 0;
+  line-height: 0;
+  img {
+    @include media($medium-screen-up) {
+      border-radius: $large-border-radius;
+    }
+  }
+}
+
+.post-header {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+ul.post-meta {
+  text-align: center;
+  color: $medium-grey;
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  li:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.post-meta i {
+  margin-right: 5px;
+}
+
+article.post-content {
+  padding-bottom: 5%;
+  p:first-child {
+    font-size: em(18);
+  }
+  img {
+    margin: 0;
+    width: 100%
+  }
+}
+
+// Styles for index.html posts list.
+.posts .post-excerpt {
+  padding-bottom: 2%;
+}
+
+.posts {
+  margin-bottom: 5%;
+  padding-bottom: 4%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// 'Continue reading' button - additional styling.
+.button.read-more {
+  @include span-columns(12);
+  text-align: center;
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+      @include shift(8);
+    }
+}

@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Normalize
+@import "_normalize";
+
+// Bourbon Framework
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+// Partials
+@import "_header";
+@import "_layout";
+@import "_post";
+@import "_footer";
+@import "_animation";
+@import "_prism";
+
+@charset "utf-8";

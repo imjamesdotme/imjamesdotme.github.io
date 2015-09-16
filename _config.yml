@@ -1,0 +1,25 @@
+# Site settings
+title: I'm James
+tagline: Aspiring Web Developer's Blog
+email: hello@imjames.me
+description: > # this means to ignore newlines until "baseurl:"
+ I'm James, an aspiring front-end developer based in the UK. I'm a tech enthuasist with a passion for all things digital. My adventures with the web don't stop at the front-end of things, I enjoy reading & playing around with servers, learning about cyber security and just about anything powered by 1's and 0's.
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Social
+github_username: imjamesdotme
+bitbucket_username: imjamesdotme
+#linkedin_username:
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
+relative_permalinks: true

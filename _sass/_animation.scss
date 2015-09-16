@@ -1,0 +1,51 @@
+@include keyframes (slideUp) {
+  0% {
+    bottom: -100%;
+  }
+  50% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+.slideUp {
+  position: relative;
+  transition: 0.4s ease-in;
+  @include animation(slideUp 0.4s linear infinite);
+  @include animation-name(slideUp);
+  @include animation-duration(0.4s);
+  @include animation-timing-function(linear);
+  @include animation-delay(initial);
+  @include animation-iteration-count(1);
+  @include animation-direction(inital);
+  @include animation-fill-mode(initial);
+  @include animation-play-state(initial);
+}
+
+@include keyframes (slideDown) {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: -50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.slideDown {
+  position: relative;
+  transition: 0.4s ease-in;
+  @include animation(slideDown 0.3s linear infinite);
+  @include animation-name(slideDown);
+  @include animation-duration(0.3s);
+  @include animation-timing-function(linear);
+  @include animation-delay(initial);
+  @include animation-iteration-count(1);
+  @include animation-direction(inital);
+  @include animation-fill-mode(initial);
+  @include animation-play-state(initial);
+}

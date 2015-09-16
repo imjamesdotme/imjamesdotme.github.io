@@ -1,0 +1,92 @@
+footer {
+  position: relative;
+  z-index: 2;
+  background-color: $brand-primary;
+  a {
+    color: $white;
+    font-style: italic;
+    &:hover {
+      color: darken($white, 10);
+    }
+  }
+}
+
+footer h4 {
+  color: $white;
+}
+
+footer p {
+  color: $grey;
+}
+
+.about-me {
+  @include outer-container;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  @include media($medium-screen-up) {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+
+.colophon {
+  @include span-columns(12);
+  padding-left: 5%;
+  padding-right: 5%;
+  @include media($medium-screen-up) {
+    @include span-columns(7);
+    @include media($large-screen-up) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.social {
+  @include span-columns(12);
+  margin-top: 10%;
+  text-align: center;
+  @include media($medium-screen-up) {
+    @include span-columns(5);
+    margin-top: 5%;
+  }
+}
+
+// Social Styles
+.social .fa {
+  margin-bottom: 25px;
+  color: $white;
+  font-size: em(40);
+}
+
+.social ul {
+  margin-top: 25px;
+    li {
+      display: inline;
+      margin-right: 50px;
+      @include media($medium-screen-up) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.social ul li:last-of-type {
+  margin-right: 0px;
+}
+
+.social .i-lg {
+  display: block;
+  font-size: em(75);
+}
+
+// Footer Copyright
+.footer-copyright {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $brand-darken;
+  text-align: center;
+  p {
+    margin: 0;
+    font-size: em(15);
+  }
+}

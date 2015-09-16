@@ -1,0 +1,23 @@
+<footer>
+  <div class="about-me">
+    <section class="colophon">
+      <h4>About</h4>
+      <p>{{ site.description }}</p>
+      <p>This blog was build using <a href="https://atom.io/" title="Atom - Text Editor" target="_blank">Atom</a> along with <a href="http://jekyllrb.com/" title="Jekyll - Static Blog Generator" target="_blank">Jekyll</a>, styled with the <a href="http://bourbon.io" title="Bourbon - SASS Tool Set" target="_blank">Bourbon Family</a>,
+        version control is handled by <a href="https://git-scm.com/" title="Git - Version Control System" target="_blank">Git</a> and the public repo can be found on <a href="" title="I'm James Blog on GitHub" target="_blank">GitHub</a>. Kindly hosted for free on <a href="https://pages.github.com/" title="GitHub Pages" target="_blank">GitHub pages</a>.</p>
+    </section>
+    <aside class="social">
+      <a href="mailto:{{ site.email }}"><i class="fa fa-paper-plane-o i-lg"></i></a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <ul>
+        <li><a href="https://github.com/{{ site.github_username }}" class="icon" title="James on Github" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+      <li><a href="https://bitbucket.org/{{ site.bitbucket_username }}" class="icon" title="James on Bitbucket" target="_blank"><i class="fa fa-bitbucket"></i></a></li>
+      <li><a href="{{ site.linkedin_username }}" title="James on LinkedIn" class="icon" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </aside>
+  </div>
+  <div class="footer-copyright">
+      <p>I'm James © 2015</p>
+  </div>
+  <script src="{{" /js/prism.js " | prepend: site.baseurl }}"></script>
+</footer>
