@@ -80,10 +80,11 @@ picture {
 }
 
 blockquote {
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
-  font-size: em(24);
+  font-size: em(32);
   border-left: 2px solid darken($brand-primary, 10);
+  padding-left: 20px;
 }
 
 blockquote p {
