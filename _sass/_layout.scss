@@ -4,10 +4,11 @@
   @include media($medium-screen-up) {
     margin-top: 5%;
     margin-bottom: 5%;
-  }
-  @include media($medium-screen-up) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  @include media($large-screen-up) {
+    padding: 0;
   }
 }
 
