@@ -14,7 +14,7 @@ By default, if you haven't set any preferences in your git config file then git 
 
 After some browsing around the web & looking for solutions, I used a mix of answers to come up with method of renaming previous commits. It's worth noting GitHub to [offer a way](https://help.github.com/articles/changing-author-info/) of doing this but in my case I didn't have any luck with it.
 
-*Note* There are several methods of renaming previous commits & you must be error on the side of caution as your changing history (pretty cool, right?). The script below should not be using on public repositories. This worked perfectly for me as its only myself that commits to it, therefore I wouldn't be overriding anyone else's commit history.
+**Note** There are several methods of renaming previous commits & you must be error on the side of caution as your changing history (pretty cool, right?). The script below should not be using on public repositories. This worked perfectly for me as its only myself that commits to it, therefore I wouldn't be overriding anyone else's commit history.
 
 <pre><code class="language-git">
 git filter-branch -f --env-filter
@@ -31,6 +31,6 @@ Once this has run successfully (you can check this by running 'git log' and pres
 git push -f origin master
 </code></pre>
 
-Once you've pushed to your remote, double check the commit history and you should find that everything has been corrected with the correct author information.s
+Once you've pushed to your remote, double check the commit history and you should find that all your commits now have the correct author information.
 
 You can also find the above script as a [gist](https://gist.github.com/imjamesdotme/8ca2281ad15f61037b41). The git ['Getting Started - First Time Git Setup'](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) documentation is certainly worth a browse if you need a remind of all the various config options.
