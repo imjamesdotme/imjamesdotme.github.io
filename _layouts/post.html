@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
-<div class="post-image">
-  <img src="{{ page.image }}" alt="{{ page.imageAlt }}">
-</div>
-<div class="wrapper">
-  <div class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
-    <hr class="separator">
-    <ul class="post-meta">
-        <li><i class="fa fa-clock-o"></i> <time>{{ page.date | date: "%b %-d, %Y" }}</time></li>
-        <li><i class="fa fa-pencil"></i> {{ page.content | number_of_words }} Words</li>
-        <li><i class="fa fa-files-o"></i> {{ page.categories | join: ', ' }}</li>
-      </ul>
+<article>
+  <div class="post-image">
+    <img src="{{ page.image }}" alt="{{ page.imageAlt }}">
+  </div>
+  <div class="wrapper">
+    <div class="post-header">
+      <h2 class="post-title">{{ page.title }}</h2>
+      <hr class="separator">
+      <ul class="post-meta">
+          <li><i class="fa fa-clock-o"></i> <time>{{ page.date | date: "%b %-d, %Y" }}</time></li>
+          <li><i class="fa fa-pencil"></i> {{ page.content | number_of_words }} Words</li>
+          <li><i class="fa fa-files-o"></i> {{ page.categories | join: ', ' }}</li>
+        </ul>
+      </div>
+    <div class="post-content">
+      {{ content }}
     </div>
-  <article class="post-content">
-    {{ content }}
-  </article>
-</div>
+  </div>
+</article>

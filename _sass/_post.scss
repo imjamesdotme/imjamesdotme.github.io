@@ -30,7 +30,7 @@ ul.post-meta {
   margin-right: 5px;
 }
 
-article.post-content {
+.post-content {
   padding-bottom: 5%;
   p:first-child {
     font-size: em(18);
@@ -42,16 +42,20 @@ article.post-content {
 }
 
 // Styles for index.html posts list.
+article.post {
+  overflow: hidden;
+  margin-bottom: 5%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .posts .post-excerpt {
   padding-bottom: 2%;
 }
 
-.posts {
-  margin-bottom: 5%;
+.post-info {
   padding-bottom: 4%;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 // 'Continue reading' button - additional styling.
