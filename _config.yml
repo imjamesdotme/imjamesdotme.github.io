@@ -20,6 +20,5 @@ sass:
 # Build settings
 markdown: kramdown
 
-# Use of `relative_permalinks` ensures post links from the index work properly.
+# Permalinks
 permalink: pretty
-relative_permalinks: true
