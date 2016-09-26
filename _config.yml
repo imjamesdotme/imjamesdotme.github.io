@@ -1,16 +1,14 @@
 # Site settings
 title: I'm James
-tagline: Aspiring Web Developer's Blog
+tagline: Developer's Blog
 email: hello@imjames.me
-description: > # this means to ignore newlines until "baseurl:"
- I'm James, an aspiring front-end developer based in the UK. I'm a tech enthuasist with a passion for all things digital. My adventures with the web don't stop at the front-end of things, I enjoy reading & playing around with servers, learning about cyber security and just about anything powered by 1's and 0's.
+description: I'm a front-end developer & content manager based in the South-West of England.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://imjamesdotme.github.io/" # the base hostname & protocol for your site
 
 # Social
 github_username: imjamesdotme
-bitbucket_username: imjamesdotme
-#linkedin_username:
+linkedin_username: jameslilliott
 
 # SASS
 sass:
