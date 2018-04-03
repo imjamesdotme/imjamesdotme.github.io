@@ -8,7 +8,7 @@ image: /assets/using-rsync.jpg
 imageAlt: Using rsync with Dropbox
 ---
 
-I recently decieded to review my backup process and fortunately at the same time learnt about [rync](http://linux.die.net/man/1/rsync) from a colleague. rsync is file transfer program that comes pre-installed on Ubuntu and can be used both locally & remotely.
+I recently decieded to review my backup process and fortunately at the same time learnt about [rsync](http://linux.die.net/man/1/rsync) from a colleague. rsync is file transfer program that comes pre-installed on Ubuntu and can be used both locally & remotely.
 
 The reason I wanted to try this with Dropbox is because after the initial backup (a few GB's in my case), I'd only be syncing small amounts of data at anyone time, keeping bandwidth & CPU usage low. Getting started with Dropbox is as simple as locating the path you want to back up (in my case my 'home' directory) and the path of the reciepent (in this case a Dropbox folder I had sync'd locally). The command below will copy everything from my home folder & place it into my ubuntu-home folder on Dropbox. rsync will make sure there are no differences between the files - if anything changes in my home folder (such as new files or deleted folders) it'll apply those changes to my folder in Dropbox.
 
